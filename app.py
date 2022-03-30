@@ -135,15 +135,7 @@ def row2dict(row):
 
 @app.route('/project', methods=['GET'])
 def project():
-    plist = []
-    try:
-        pdata = ProjectDetails.query.all()
-    except Exception as e:
-        print(e)
-        pdata = []
-    for data in pdata:
-        plist.append(row2dict(data))
-    return render_template('project_details_v2.html', project=plist)
+    return render_template('project_details_v2.html')
 
 
 @app.route('/<path:path>')
