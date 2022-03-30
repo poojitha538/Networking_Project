@@ -1,0 +1,151 @@
+{% extends 'sidebar.html' %}
+
+{% block content %}
+
+<style>
+
+    body {
+    background: #eee
+}
+
+.card {
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #E1BEE7;
+    transform: scaleY(1);
+    transition: all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #8E24AA;
+    transform: scaleY(0);
+    transition: all 0.5s;
+    transform-origin: bottom
+}
+
+.card:hover::after {
+    transform: scaleY(1)
+}
+
+.fonts {
+    font-size: 11px
+}
+
+.social-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0
+}
+
+.social-list li {
+    padding: 10px;
+    color: #8E24AA;
+    font-size: 25px
+}
+
+.bio-graph-heading {
+    background: #fbc02d;
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    padding: 40px 110px;
+    border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.bio-graph-info {
+    color: #89817e;
+}
+
+.bio-graph-info h1 {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0 0 20px;
+}
+
+.bio-row {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+    padding:0 15px;
+}
+
+.bio-row p span {
+    width: 100px;
+    display: inline-block;
+}
+
+</style>
+
+<div class="col py-3 px-lg-5 border bg-light">
+
+        <h4>Hello Everybody, I am Poojitha</h4>
+
+    <br>
+    <p>I am from Hyderabad,India. I'm here at Texas A&M University, Commerce to persue my education in Masters in computer science. My schooling and secondary education is from India, I also worked in IT sector for 5years back in India as a Software Engineer. I worked for Infor Global Solutions headquartered at New York. That is pretty much about me in brief.</p>
+
+    <br>
+
+    <div class="panel-body bio-graph-info">
+              <h1>Bio Graph</h1>
+              <div class="row">
+                  <div class="bio-row">
+                      <p><span>First Name </span>: Poojitha</p>
+                  </div>
+                  <div class="bio-row">
+                      <p><span>Last Name </span>: Anchetty</p>
+                  </div>
+                  <div class="bio-row">
+                      <p><span>Country </span>: India</p>
+                  </div>
+                  <div class="bio-row">
+                      <p><span>Birthday</span>: 1<sup>st</sup> August 1992</p>
+                  </div>
+                  <div class="bio-row">
+                      <p><span>Occupation </span>: Software Engineer</p>
+                  </div>
+                  <div class="bio-row">
+                      <p><span>Email </span>: panchetty@leomail.tamuc.edu</p>
+                  </div>
+                  <div class="bio-row">
+                      <p><span>Mobile </span>: (972)-973-8287</p>
+                  </div>
+                  <div class="bio-row">
+                      <p><span>Phone </span>: (972)-973-8287</p>
+                  </div>
+              </div>
+          </div>
+    <br>
+
+    <ul class="social-list">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa fa-google"></i></a></li>
+    </ul>
+</div>
+
+
+{% endblock %}

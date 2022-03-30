@@ -1,0 +1,88 @@
+{% extends 'sidebar.html' %}
+
+{% block content %}
+
+<style>
+
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+
+</style>
+
+<div class="col py-3 px-lg-5 bg-light">
+
+    <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4> <i class="fa fa-graduation-cap"></i>   Masters in Computer Science</h4>
+              <h5> 2021 - 2022</h5>
+              <p><em> <i class="fa fa-university"></i>   Texas A&M University, Commerce, TX</em></p>
+              <p>Pursuing Masters in Computer Science </p>
+            </div>
+            <div class="resume-item">
+              <h4><i class="fa fa-graduation-cap"></i>   Bachelor of Technology</h4>
+              <h5><i class="fa fa-calendar"></i>   2011 - 2015</h5>
+              <p><em><i class="fa fa-university"></i>   Vardhaman College of Engineering, Hyderabad, India</em></p>
+              <p>Completed my graduation in EEE group with aggregate of 76% </p>
+            </div>
+
+            <div class="resume-item">
+              <h4><i class="fa fa-graduation-cap"></i>   Intermediate Education</h4>
+              <h5><i class="fa fa-calendar"></i>   2008 - 2010</h5>
+              <p><em><i class="fa fa-university"></i>   Narayana Junior College, Hyderabad, India</em></p>
+              <p>Completed my Intermediate in MPC group with aggregate of 93%</p>
+            </div>
+
+
+</div>
+
+
+{% endblock %}
